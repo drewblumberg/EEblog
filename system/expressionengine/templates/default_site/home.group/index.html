@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>Home</h1>
+
+  <h2>Latest blogs:</h2>
+  <a href="{path='blogs'}">All Blogs</a>
+  <hr />
+  <ul>
+    {exp:channel:entries channel='blogs' limit='10'}
+      <li><a href="{url_title_path='blogs'}">{title}</a></li>
+    {/exp:channel:entries}
+  </ul>
+
+</body>
+</html>

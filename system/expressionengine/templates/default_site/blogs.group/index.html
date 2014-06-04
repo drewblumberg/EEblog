@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<head>
+  <title>All Blogs</title>
+</head>
+<body>
+  <h1>All Blogs</h1>
+  <p>Here are all the blogs.</p>
+  <hr />
+  {exp:channel:entries channel="blogs" limit="10"}
+    <h2>{title}</h2>
+    <h3>{author_name}</h3>
+    {blog_entry}
+  {/exp:channel:entries}
+
+</body>
+</html>
